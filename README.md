@@ -8,3 +8,5 @@ then:
 cd backend
 python manage.py runserver
 
+Note: For some reason, can't migrate since django create unnecessary session tables in db.
+
