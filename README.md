@@ -8,15 +8,3 @@ then:
 cd backend
 python manage.py runserver
 
-open terminal:
-npm run dev
-
-
-Software requirements:
-Python 3.13.3
-
-install fnm:
-winget install Schniz.fnm
-
-Node.JS
-fnm install 22
