@@ -13,6 +13,9 @@
         "project_name": "kinetiq-erp-projman",
         "runtime": "python3.12",
         "s3_bucket": "zappa-project-management",
+        "memory_size": 512,
+        "timeout_seconds": 120,
+        "touch_path": "health/",
         "vpc_config": {
             "SubnetIds": [
             "subnet-0afd6c1a25f45edca",
@@ -28,12 +31,8 @@
             "DB_USER": "postgres",
             "DB_PASSWORD": "KntBg3jIY0DbpH8G9bwt",
             "DB_HOST": "kinetiq-postgresql.c30ww0i2ytkm.ap-southeast-1.rds.amazonaws.com",
-            "DB_PORT": "5432",
+            "DB_PORT": "15432",
             "SECRET_KEY": "django-insecure-eylsb0+r0*jaf_jok$yvcejuq5k*tqja!e48)27)px3o%xz9-5"
-          },
-          "memory_size": "128",
-          "timeout_seconds": "30",
-          "keep_warm": "false",
-          "slim_handler": "true"
+          }
     }
 }

@@ -18,10 +18,9 @@ load_dotenv()
 SECRET_KEY = os.getenv('SECRET_KEY')
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = False
+DEBUG = True
 
-ALLOWED_HOSTS = ['r1wrm07yy4.execute-api.ap-southeast-1.amazonaws.com',
-                 'htm0n3ydog.execute-api.ap-southeast-1.amazonaws.com',
+ALLOWED_HOSTS = ['hp0w1llp43.execute-api.ap-southeast-1.amazonaws.com',
                  'localhost', 
                  '127.0.0.1',]
 
@@ -53,7 +52,9 @@ REST_FRAMEWORK = {
     'PAGE_SIZE': 10
 }
 
-CORS_ALLOWED_ORIGINS = ["https://d2dhcd346f3g6s.cloudfront.net", "http://kinetiq-shell-app.s3-website-ap-southeast-1.amazonaws.com"] 
+CORS_ALLOWED_ORIGINS = ["https://d2dhcd346f3g6s.cloudfront.net", 
+                        "http://kinetiq-shell-app.s3-website-ap-southeast-1.amazonaws.com",
+                        "http://localhost:5173",] 
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
